@@ -5,8 +5,8 @@ const portscanner = require('portscanner');
 
 let environmentPort;
 
-if (process.env.TRILIUM_PORT) {
-    environmentPort = parseInt(process.env.TRILIUM_PORT);
+if (process.env.PORT) {
+    environmentPort = parseInt(process.env.PORT);
 }
 
 if (utils.isElectron()) {
